@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/slice-base-args2multislice
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var args2multislice = require( '@stdlib/slice-base-args2multislice' );
+import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@deno/mod.js';
 ```
 
 <a name="main"></a>
@@ -78,7 +62,7 @@ var args2multislice = require( '@stdlib/slice-base-args2multislice' );
 Create a [`MultiSlice`][@stdlib/slice/multi] object from a list of [`MultiSlice`][@stdlib/slice/multi] constructor arguments.
 
 ```javascript
-var Slice = require( '@stdlib/slice-ctor' );
+import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
 
 var s = args2multislice( [ 0, new Slice( 2, 10, 1 ), 1 ] );
 // returns <MultiSlice>
@@ -112,8 +96,8 @@ var d = s.data;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Slice = require( '@stdlib/slice-ctor' );
-var args2multislice = require( '@stdlib/slice-base-args2multislice' );
+import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
+import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@deno/mod.js';
 
 var s = args2multislice( [ null, null, null ] );
 // returns <MultiSlice>
@@ -163,7 +147,7 @@ d = s.data;
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -223,7 +207,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/slice-base-args2multislice/main/LICENSE
 
-[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi
+[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi/tree/deno
 
 </section>
 
