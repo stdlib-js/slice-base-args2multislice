@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/slice-base-args2multislice",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Create a MultiSlice object from a list of MultiSlice constructor arguments.",
   "license": "Apache-2.0",
   "author": {
