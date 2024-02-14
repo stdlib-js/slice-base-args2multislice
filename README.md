@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/slice-base-args2multislice/tags). For example,
+
+```javascript
 import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@v0.2.0-deno/mod.js';
 ```
 
@@ -97,7 +102,7 @@ var d = s.data;
 
 ```javascript
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
-import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@v0.2.0-deno/mod.js';
+import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@deno/mod.js';
 
 var s = args2multislice( [ null, null, null ] );
 // returns <MultiSlice>
