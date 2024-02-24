@@ -1,0 +1,4 @@
+// Copyright (c) 2024 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./index.d.ts" />
+import e from"https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@v0.2.0-esm/index.mjs";function n(n){switch(n.length){case 0:return new e;case 1:return new e(n[0]);case 2:return new e(n[0],n[1]);case 3:return new e(n[0],n[1],n[2]);case 4:return new e(n[0],n[1],n[2],n[3]);case 5:return new e(n[0],n[1],n[2],n[3],n[4]);case 6:return new e(n[0],n[1],n[2],n[3],n[4],n[5]);case 7:return new e(n[0],n[1],n[2],n[3],n[4],n[5],n[6]);case 8:return new e(n[0],n[1],n[2],n[3],n[4],n[5],n[6],n[7]);case 9:return new e(n[0],n[1],n[2],n[3],n[4],n[5],n[6],n[7],n[8]);case 10:return new e(n[0],n[1],n[2],n[3],n[4],n[5],n[6],n[7],n[8],n[9]);default:return e.apply(null,n)}}export{n as default};
+//# sourceMappingURL=index.mjs.map
