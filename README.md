@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/slice-base-args2multislice/tags). For example,
+
+```javascript
 import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@v0.2.1-esm/index.mjs';
 ```
 
@@ -102,7 +107,7 @@ var d = s.data;
 <script type="module">
 
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@v0.2.1-esm/index.mjs';
+import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@esm/index.mjs';
 
 var s = args2multislice( [ null, null, null ] );
 // returns <MultiSlice>
