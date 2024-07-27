@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/slice-base-args2multislice",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Create a MultiSlice object from a list of MultiSlice constructor arguments.",
   "license": "Apache-2.0",
   "author": {
@@ -43,7 +43,7 @@
   "devDependencies": {
     "@stdlib/assert-is-multi-slice": "^0.2.1",
     "@stdlib/assert-is-slice": "^0.2.1",
-    "@stdlib/slice-ctor": "^0.2.1",
+    "@stdlib/slice-ctor": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
