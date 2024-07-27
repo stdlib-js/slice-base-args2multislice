@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@deno/mod.js';
+import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@v0.2.2-deno/mod.js';
 ```
 
 <a name="main"></a>
@@ -97,7 +97,7 @@ var d = s.data;
 
 ```javascript
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
-import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@deno/mod.js';
+import args2multislice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-args2multislice@v0.2.2-deno/mod.js';
 
 var s = args2multislice( [ null, null, null ] );
 // returns <MultiSlice>
