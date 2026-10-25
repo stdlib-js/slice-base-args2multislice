@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,16 +16,26 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { ArrayLike } from '@stdlib/types/array';
+import { Slice, MultiSlice } from '@stdlib/types/slice';
 
 /**
-* Create a MultiSlice object from a list of MultiSlice constructor arguments.
+* Slice argument.
+*/
+type SliceArgument = Slice | number | null | undefined;
+
+/**
+* Creates a MultiSlice object from a list of MultiSlice constructor arguments.
 *
-* @module @stdlib/slice-base-args2multislice
+* @param args - list of constructor arguments
+* @returns MultiSlice object
 *
 * @example
 * var Slice = require( '@stdlib/slice-ctor' );
-* var args2multislice = require( '@stdlib/slice-base-args2multislice' );
 *
 * var s = args2multislice( [ void 0, new Slice( 0, 10, 1 ) ] );
 * // returns <MultiSlice>
@@ -35,7 +45,6 @@
 *
 * @example
 * var Slice = require( '@stdlib/slice-ctor' );
-* var args2multislice = require( '@stdlib/slice-base-args2multislice' );
 *
 * var s = args2multislice( [ new Slice( 0, 10, 1 ), void 0 ] );
 * // returns <MultiSlice>
@@ -45,7 +54,6 @@
 *
 * @example
 * var Slice = require( '@stdlib/slice-ctor' );
-* var args2multislice = require( '@stdlib/slice-base-args2multislice' );
 *
 * var s = args2multislice( [ new Slice( 0, 10, 1 ), void 0, void 0, new Slice( 0, 10, 1 ) ] );
 * // returns <MultiSlice>
@@ -55,7 +63,6 @@
 *
 * @example
 * var Slice = require( '@stdlib/slice-ctor' );
-* var args2multislice = require( '@stdlib/slice-base-args2multislice' );
 *
 * var s = args2multislice( [ void 0, new Slice( 0, 10, 1 ), null,  void 0, new Slice( 2, 9, 2 ), null, void 0 ] );
 * // returns <MultiSlice>
@@ -63,12 +70,9 @@
 * var data = s.data;
 * // returns [ null, <Slice>, null, null, <Slice>, null, null ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function args2multislice( args: ArrayLike<SliceArgument> ): MultiSlice;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = args2multislice;
